@@ -1,0 +1,38 @@
+<div class="main">
+  <h4>Sign Up</h4>
+  <form [formGroup]="signup" class="form">
+    <div class="flex-column">
+      <label>First Name</label>
+    </div>
+    <div class="inputForm">
+      <input formControlName="name" type="text" class="input" placeholder="Enter your First Name">
+    </div>
+    <div class="flex-column">
+      <label>Last Name</label>
+    </div>
+    <div class="inputForm">
+      <input formControlName="lname" type="text" class="input" placeholder="Enter your Last Name">
+    </div>
+    <div class="flex-column">
+      <label>Email</label>
+    </div>
+    <div class="inputForm">
+      <input formControlName="mail" type="email" class="input" placeholder="Enter your Email">
+    </div>
+    <div class="flex-column">
+      <label>Password</label>
+    </div>
+    <div class="inputForm">
+      <input formControlName="pass" type="password" class="input" placeholder="Enter your Password">
+    </div>
+    <div class="flex-row">
+      <div>
+        <input type="checkbox">
+        <label style="margin-left: 5px;">Remember me </label>
+      </div>
+    </div>
+    <button type="submit" class="button-submit">Sign Up</button>
+    <p class="p">Already have an account? <button routerLink="/login" class="span" style="background-color: transparent; border: none;">Log in</button></p>
+  </form>
+</div>
+<router-outlet></router-outlet>
